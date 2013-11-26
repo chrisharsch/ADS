@@ -1,18 +1,25 @@
 package uebung2;
 
+import java.util.Stack;
+
+
 public class Aufgabe2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println(rek(-10));
+	
+		System.out.println(rek(10000));
 	}
-
-	public static int rek(int n) {
+	
+	public static long rek(long n) {
 		if (n > 0) {
+			System.out.println(n);
 			return n + rek(n - 1);
+			
 		} else if (n < 0) {
+			System.out.println(n);
 			return n + rek(n + 1);
 		}else{
+			System.out.println(n);
 			return n;
 		}
 	}
